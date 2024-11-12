@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Header -->
+<header class=" py-3">
+    <div class="container d-flex align-items-center justify-content-between">
+        <!-- Logo -->
+        <div class="header-logo">
+            <img src="/images/trt-header.png" alt="Company Logo" style="height: 80px; width: 480px;">
+        </div>
+        
+        <!-- Navigation Links -->
+        <nav class="header-nav">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="#our-services" class="nav-link btn btn-outline-warning mx-1">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/team.html" target="_blank" class="nav-link btn btn-outline-warning mx-1">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#compliance" class="nav-link btn btn-outline-warning mx-1" id="complianceBtn">Compliance</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact-us" class="nav-link btn btn-outline-warning mx-1">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Custom Popup -->
+<div class="popup" id="compliancePopup">
+    <div class="popup-content">
+        <h3>Compliance</h3>
+        <p class="text-white">At TRT Security we take our compliance very seriously. We are compliant in the following:</p>
+        <p class="text-white">🚁 PSIRA (Private Security Industry Regulatory Authority) accredited and vetted</p>
+        <p class="text-white">🚁 OHSE accredited and vetted</p>
+        <p class="text-white">🚁 Members of the UIF and provident fund</p>
+        <p class="text-white">🚁 Have a letter of good standing from COIDA (Compensation for Occupational Injuries and Diseases Act)</p>
+        <p class="text-white">🚁 Annual inspection from the Department of Labour</p>
+        <p class="text-white">🚁 Insured for all liabilities</p>
+        <p class="text-white">🚁 Members of CPF</p>
+        <button class="btn btn-secondary" id="closePopupBtn">Close</button>
+    </div>
+</div>
+
+
+
+<div class="container-fluid text-white py-5" style="background-image: url(/images/hero-parkinglot.PNG); background-size: cover;">
+    <div class="row text-center">
+        <div class="col-md-4">
+            <div class="card background text-white mb-4 shadow">
+                <div class="card-body">
+                    <i class="fas fa-shield-alt fa-3x mb-3"></i>
+                    <h5 class="card-title">~</h5>
+                    <p class="card-text">Our only objective is to serve and protect you, Your family, Your employees. There where you need us.</p>
+                    <br>
+                    <a href="#contact-us" class="btn btn-warning caps">Let Us call you for an appointment!</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card background text-white mb-4 shadow">
+                <div class="card-body">
+                    <i class="fas fa-user-shield fa-3x mb-3"></i>
+                    <h5 class="card-title">~</h5>
+                    <p class="card-text">Our team of Security specialiests have decades of crime fighting and prevention experionce.</p>
+                    <br>
+                    <a href="#contact-us" class="btn btn-warning caps">Let Us call you for an appointment!</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card background text-white mb-4 shadow">
+                <div class="card-body">
+                    <i class="fas fa-car fa-3x mb-3"></i>
+                    <h5 class="card-title">~</h5>
+                    <p class="card-text">National experts in crime analyis and prevention, Your one stop Security solution</p>
+                    <br>
+                    <a href="#contact-us" class="btn btn-warning caps">Let Us call you for an appointment!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class=" wave wave--top" style="border-top: 6px solid #0b0949cf; ">
+</div>
+
+<div style="background-color: #191919; text-align: center; padding: 20px;">
+    <h2 style=" color: #ffc107;">About Us</h2>
+    <hr>
+    <p class="info-text">Looking for a security company with all the answers?</p>
+    <p class="info-text">We are a reliable and accredited one-stop security solution. Our security specialists have decades of experience in fighting and preventing crime. Did you know organised criminals employ pros who may be ex-SAPS, army or security to disarm alarm and CCTV systems?</p>
+<br>
+<hr class="custom-hr">
+<br>
+</div>
+
+
+<div class="services-section">
+    <p class="info-text">Did you know there has been a significant increase in armed house robberies over the last few years?</p>
+    <p class="info-text">In recent years, Johannesburg has seen a troubling rise in armed house robberies. These incidents, often occurring in the middle of the night, have left many families feeling vulnerable in their own homes.</p>
+    <br>
+    <hr class="custom-hr">
+    <h2 id="our-services" class="text-center"  style=" color: #ffc107;">Our Services</h2>
+    <br>
+    <div class="icon-container">
+        <div class="icon-box" onclick="openPopup('popup-technical')">
+            <i class="icon-camera fa fa-camera"></i>
+            <br>
+            <p>Technical</p>
+        </div>
+        <div class="icon-box" onclick="openPopup('popup-control-room')">
+            <i class="icon-control fa fa-desktop"></i>
+            <br>
+            <p>Control Room</p>
+        </div>
+        <div class="icon-box" onclick="openPopup('popup-security')">
+            <i class="icon-security fa fa-car"></i>
+            <br>
+            <p>Security Officers & Guarding</p>
+        </div>
+        <div class="icon-box" onclick="openPopup('popup-armed-response')">
+            <i class="icon-armed-response fa fa-bullseye"></i>
+            <br>
+            <p>Armed Response</p>
+        </div>
+        <div class="icon-box" onclick="openPopup('popup-risk-management')">
+            <i class="icon-risk-management fas fa-chart-bar"></i>
+            <br>
+            <p>Risk Management</p>
+        </div>
+        <div class="icon-box" onclick="openPopup('popup-vip-protection')">
+            <i class="icon-vip fas fa-shield-alt"></i>
+            <br>
+            <p>VIP Protection</p>
+        </div>
+        <div class="icon-box" onclick="openPopup('popup-ohse-audit')">
+            <i class="icon-audit fas fa-clipboard-check"></i>
+            <br>
+            <p>OHSE Audit & Compliance</p>
+        </div>
+        <div class="icon-box" onclick="openPopup('popup-forensics')">
+            <i class="icon-forensics fas fa-microscope"></i>
+            <br>
+            <p>Forensic Investigations</p>
+        </div>
+        <div class="icon-box" onclick="openPopup('popup-background-check')">
+            <i class="icon-background-check fas fa-fingerprint"></i>
+            <br>
+            <p>Background Checking</p>
+        </div>
+        <div class="icon-box" onclick="openPopup('popup-polygraph')">
+            <i class="icon-polygraph fas fa-flask"></i>
+            <br>
+            <p>Polygraphing</p>
+        </div>
+    </div>
+
+    <!-- Popups for each service -->
+    <div id="popup-technical" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup-technical')">&times;</span>
+            <h3>Technical</h3>
+            <p>Is your security system up to date and compliant?
+                Our technical team is knowledgeable about the products they install while providing a reliable maintenance service</p>
+                <br>
+                <p>We provide a Certificate of Compliance (COC) with our electric fence installations
+
+                    Our alarm, CCTV, biometric and patrolling systems are of an excellent standard
+                    
+                    We provide maintenance contracts which include repairs and call outs
+                    
+                    We do property risk assessments and can tailor-make security solutions to suit your needs</p>
+        </div>
+    </div>
+
+    <div id="popup-control-room" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup-control-room')">&times;</span>
+            <h3>Control Room</h3>
+            <p>Our state-of-the-art, 24-hour Control Centre manned by professionally trained controllers is the key to our reliability and effectiveness.</p>
+            <br>
+            <p>All of our systems are integrated and run from our Control Centre as the incident is taking place. The Control Centre also has direct contact with SAPS, paramedics, CPF (Community Police Forum) members, and clients. CONTACT OUR CONTROL ROOM ON 
+                <a href="tel:0118030354" style="color: #ffc107; font-weight: bold; text-decoration: underline;">011 803 0354</a>
+            </p>
+            
+        </div>
+    </div>
+
+    <div id="popup-security" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup-security')">&times;</span>
+            <h3>Security Officers & Guarding</h3>
+            <p>Do you need a highly trained, 24-hour patrolling and information security system? 
+                Our well-trained officers are full vetted through PSIRA and AFIS, to ensure trustworthiness.
+                
+                Reliable, punctual and friendly, their objective is to protect and serve with excellence.
+                
+                We offer dog/security officer patrol guarding.</p>
+        </div>
+    </div>
+
+    <div id="popup-armed-response" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup-armed-response')">&times;</span>
+            <h3>Armed Response</h3>
+            <p>Do you worry about your security team’s response time?
+                Our response time is guaranteed. We respond immediately and we contact all other necessary emergency services.</p>
+                <br>
+                <p>Our highly-trained professionals react calmly in emergencies and can handle
+
+                    first aid & fire-fighting.
+                    
+                    We also offer free trauma counselling.
+                    
+                    We don’t only respond to the scene of a crime, but provide everything necessary to immediately assist victims.
+                    
+                    Our vehicles are fully equipped for emergencies.
+                    
+                    We provide forensic assistance to SAPS.</p>
+        </div>
+    </div>
+
+    <div id="popup-risk-management" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup-risk-management')">&times;</span>
+            <h3>Risk Management</h3>
+            <p>Is my business really safe from crime? We have risk auditing specialists who will workshop security solutions for your business and private needs.</p>
+            <br>
+            <p>We save you money with cost-effective solutions.
+
+                Our only objective is keeping your family and employees safe.
+                
+                A secure home and business means lower insurance costs.
+                
+                Our security solutions eliminate stress on your family and improve productivity in your employees because they feel safe.</p>
+        </div>
+    </div>
+
+    <div id="popup-vip-protection" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup-vip-protection')">&times;</span>
+            <h3>VIP Protection</h3>
+            <p>Does your VIP need protecting? We bring years of close protection experience ensuring the safety of the South African elite including politicians and other VIPs.</p>
+            <br>
+            <p>We are dedicated , reliable, punctual and safe.
+
+                We care about the subject we protect.
+                
+                We have never had an incident.</p>
+        </div>
+    </div>
+
+    <div id="popup-ohse-audit" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup-ohse-audit')">&times;</span>
+            <h3>OHSE Audit & Compliance</h3>
+            <p>Is your business OHSE compliant?
+                We are certified to conduct OHSE Act audits, analyse and design 100% compliance solutions.
+                Providing a safer, healthier workplace, making happier, more productive employees</p>
+        </div>
+    </div>
+
+    <div id="popup-forensics" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup-forensics')">&times;</span>
+            <h3>Forensic Investigations</h3>
+            <p>Do you have an unsolved criminal or civil case?</p>
+            <br>
+            <p>Our highly experienced team of forensic specialists is dedicated to bringing you answers
+
+                and peace of mind.
+                
+                With more than 20 years in forensic investigation and an extremely successful track record in case resolution and prosecution in all investigated cases</p>
+        </div>
+    </div>
+
+    <div id="popup-background-check" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup-background-check')">&times;</span>
+            <h3>Background Checking</h3>
+            <p>re you worried about employing criminals? Need to avoid theft of money or confidential information and documents?</p>Our system is linked to the SAPS AFIS (Automated Fingerprint Identification System) system and we can verify criminal backgrounds or pending cases within 48 hours
+
+            We are one of the few South African security companies to perform this service in-house, allowing us to provide reliable and affordable results
+            <br>
+            <p></p>
+        </div>
+    </div>
+
+    <div id="popup-polygraph" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup-polygraph')">&times;</span>
+            <h3>Polygraphing</h3>
+            <p>Are you concerned about a staff member who may be stealing or deceitful?</p>
+            <br>
+            <p>Our comprehensive in-house polygraphing service includes a qualified profiler who does voice stress analysis and lie detection. This profiler is one of only six people in South Africa qualified to do the latest polygraph and voice-stress analysis together.
+
+                You get affordable, highly accurate, polygraph testing to vet your employees.</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="trt-benefits-container">
+    <br>
+    <h2 class="text-center"  style=" color: #ffc107;">Why Choose TRT?</h2>
+    <br>
+    <ul class="trt-benefits-list">
+      <li class="gap"><strong>Credible, reliable and responsive!</strong></li>
+      <li class="gap"><strong>Proven crime prevention solutions</strong></li>
+      <li class="gap"><strong>Immediate response</strong></li>
+      <li class="gap"><strong>Close, powerful network of resources including: police, other security companies, community policing forums, and emergency services</strong></li>
+      <li class="gap"><strong>Monthly, solutions-based reporting to support your decision making</strong></li>
+      <li class="gap"><strong>Reliable and accredited one-stop security solution</strong></li>
+      <li class="gap"><strong>24-hour operational TRT security control room with emergency hotline and WhatsApp group: convenient, immediate contact</strong></li>
+      <li class="gap"><strong>Access to trauma centres</strong></li>
+      <li class="gap"><strong>Access to paramedic team 24-hours a day</strong></li>
+      <li class="gap"><strong>Assistance whenever you are, not just on your property</strong></li>
+      <li class="gap"><strong>We operate nationally</strong></li>
+      <li class="gap"><strong>Peace of mind</strong></li>
+    </ul>
+    <br>
+    <br>
+    <br>
+
+    <h2 class="text-center"  style=" color: #ffc107;">Blog</h2>
+    <br>
+    <div class="col-md-6" style="margin: 0 auto; width: 70%;">
+        <div class="row g-0 rounded overflow-hidden flex-md-row mb-4 h-md-250 position-relative" style="border: 1px solid #4a4a4ef2; background-color: rgb(38, 36, 36); box-shadow: 2px 2px 2px rgb(60, 59, 59);">
+            <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2" style="text-decoration: underline; text-underline-offset: 2px;">The changing face of Retail Theft in Johannesburg</strong>
+                <h6 class="mb-0">Beating the tag system.</h6>
+                <br>
+                <p class="card-text mb-auto">
+                    Retail crime, theft and shoplifting is reportedly on the rise in Johannesburg, with criminals becoming far more savvy about beating the tag security system. They cut the tags out in-store so that the garments can be carried past the tag sensor system at the door without detection.
+                    
+                    <!-- Hidden extra content -->
+                    <span id="extraText" style="display: none;">
+                        Restaurants being targeted Another syndicate is also focusing on restaurants; 3 or 4 women are stealing handbags and wallets from restaurant tables and chairs. Apparently they are also threatening car guards and breaking into cars by popping the back windscreens and stealing valuables. As always, don’t leave valuables in sight, put them in the boot. It is also wise to put your stuff into the boot, before you leave your home or office, rather than doing it after you have parked where you can be watched.
+                    </span>
+                </p>
+                <br>
+                <!-- Toggle link -->
+                <a href="#" id="toggleText" class="icon-link gap-1 icon-link-hover text-white">
+                    Continue reading
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                    </svg>
+                </a>
+                <br>
+                <p>Author: trtsecurityadmin
+                    <br>
+                    October 21, 2016
+                </p>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+                <img src="https://www.blackpoolgazette.co.uk/jpim-static/image/2024/09/20/17/31/Shoplifter.jpeg?crop=3:2,smart&trim=&width=640&quality=65" alt="Thumbnail" width="200" height="250" style="object-fit: cover; border-radius: 5px;">
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h2 id="contact-us" class="text-center"  style=" color: #ffc107;">Contact Us</h2>
+<br>
+<br>
+    <form action="https://formspree.io/f/mkgnbjqk" method="POST" id="contactForm">
+        <div class="form-group">
+            <input type="text" id="firstName" name="first_name" required placeholder="First Name">
+        </div>
+        <div class="form-group">
+            <input type="text" id="lastName" name="last_name" required placeholder="Last Name">
+        </div>
+        <div class="form-group">
+            <input type="email" id="email" name="email" required placeholder="Email Address">
+        </div>
+        <div class="form-group">
+            <input type="tel" id="phone" name="phone" required placeholder="Phone Number">
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submitButton">Send Mail</button>
+        </div>
+    </form>
+
+
+    <div class="container" style="margin-top: 50px;">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-decoration-none lh-1"></a>
+      <span class="mb-3 mb-md-0 text-white">© 2024 TRT Security. All rights reserved. Safeguarding communities with integrity and vigilance.</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3">
+        <a class="text-white" href="https://x.com/InfoTrt">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+          </svg>
+        </a>
+      </li>
+      <li class="ms-3">
+        <a class="text-white" href="https://www.facebook.com/trtsecu?mibextid=LQQJ4d">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+          </svg>
+        </a>
+      </li>
+      <li class="ms-3">
+        <a class="text-white" href="https://www.linkedin.com/company/trt-sec/">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </footer>
+</div>
+  </div>
+
+
+<script>
+    // Function to open a popup
+function openPopup(id) {
+    document.getElementById(id).style.display = "flex";
+}
+
+// Function to close a popup
+function closePopup(id) {
+    document.getElementById(id).style.display = "none";
+}
+
+
+    // Get elements
+    const complianceBtn = document.getElementById('complianceBtn');
+    const compliancePopup = document.getElementById('compliancePopup');
+    const closePopupBtn = document.getElementById('closePopupBtn');
+
+    // Open the popup when the button is clicked
+    complianceBtn.addEventListener('click', function(event) {
+        event.preventDefault(); 
+        compliancePopup.style.display = 'flex';
+    });
+
+    // Close the popup when the close button is clicked
+    closePopupBtn.addEventListener('click', function() {
+        compliancePopup.style.display = 'none'; 
+    });
+
+    // Close the popup when clicking anywhere outside the popup content
+    window.addEventListener('click', function(event) {
+        if (event.target === compliancePopup) {
+            compliancePopup.style.display = 'none';
+        }
+    });
+
+
+
+    document.getElementById('toggleText').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default link action
+        
+        const extraText = document.getElementById('extraText');
+        const toggleLink = document.getElementById('toggleText');
+        
+        // Toggle visibility of extra text
+        if (extraText.style.display === 'none') {
+            extraText.style.display = 'inline';
+            toggleLink.innerHTML = 'See less <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-arrow-left-circle" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M16 8a8 8 0 1 1-16 0A8 8 0 0 1 16 8zM8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM11.5 8.5a.5.5 0 0 1 0-1H5.707l2.146-2.146a.5.5 0 0 1-.708-.708l-3 3a.5.5 0 0 1 0 .708l3 3a.5.5 0 1 1-.708-.708L5.707 8.5h5.793z"/></svg>';
+        } else {
+            extraText.style.display = 'none';
+            toggleLink.innerHTML = 'Continue reading <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-arrow-right-circle" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/></svg>';
+        }
+    });
+
+
+
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevents default form submission behavior
+
+    const submitButton = document.getElementById('submitButton');
+    submitButton.textContent = 'Sending...';
+    submitButton.disabled = true;
+
+    // Prepare form data to send via Formspree
+    const formData = new FormData(event.target);
+
+    // Send form data to Formspree using fetch
+    fetch('https://formspree.io/f/mkgnbjqk', {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(response => {
+        if (response.ok) {
+            setTimeout(() => {
+                // Reset form fields after 5 seconds
+                event.target.reset();
+                submitButton.textContent = 'Sent'; // Display 'Sent' message on the button
+                
+                // Optionally reset the button text after a short delay
+                setTimeout(() => {
+                    submitButton.textContent = 'Send Message'; // Reset button text
+                    submitButton.disabled = false; 
+                }, 2000); // Keep "Sent" message for 2 seconds
+            }, 5000); // Delay before clearing form and showing "Sent"
+        } else {
+            submitButton.textContent = 'Send Message'; // Reset button text in case of error
+            alert("There was an issue sending your message. Please try again.");
+            submitButton.disabled = false;
+        }
+    }).catch(error => {
+        submitButton.textContent = 'Send Message'; // Reset button text in case of error
+        alert("There was an issue sending your message. Please try again.");
+        submitButton.disabled = false;
+    });
+});
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    </body>
+</html>
