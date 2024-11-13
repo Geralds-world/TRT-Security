@@ -54,6 +54,62 @@ header {
     padding-bottom: 30px;
   }
 
+
+
+/* Container for the images */
+.custom-image-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    background-color: #1a1a1a;
+}
+
+/* Wrapper for each image to handle the hover effect */
+.custom-image-wrapper {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.703);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 2px solid #ffc107;
+    box-shadow: 3px 3px 3px #ffc10752;
+}
+
+/* Image styling */
+.custom-image {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for enlarging image */
+.custom-image-wrapper:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.custom-image-wrapper:hover .custom-image {
+    transform: scale(1.1);
+}
+
+/* Mobile styling: Stack images vertically and add a scroll reveal effect */
+@media (max-width: 768px) {
+    .custom-image-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .custom-image-wrapper.in-view {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
 /* Custom styles for the security website */
 body {
     font-family: Arial, sans-serif;
@@ -86,7 +142,7 @@ h2 {
 }
 
 .background {
-    background-color: #191919c8 !important;
+    background-color: #1a1a1a9d !important;
 }
 
 
@@ -195,7 +251,8 @@ h2 {
   }
 
   .trt-benefits-list {
-    border: 1px solid #ffc107;
+    background-color: rgba(50, 50, 50, 0.9);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     margin: 0 auto;
     width: 60%;

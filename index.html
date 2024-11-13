@@ -34,6 +34,9 @@
                 <li class="nav-item">
                     <a href="#contact-us" class="nav-link btn btn-outline-warning mx-1">Contact</a>
                 </li>
+                <li class="nav-item">
+                    <a href="/blog.html" target="_blank" class="nav-link btn btn-outline-warning mx-1">Blog</a>
+                </li>
             </ul>
         </nav>
     </div>
@@ -106,8 +109,18 @@
     <p class="info-text">Looking for a security company with all the answers?</p>
     <p class="info-text">We are a reliable and accredited one-stop security solution. Our security specialists have decades of experience in fighting and preventing crime. Did you know organised criminals employ pros who may be ex-SAPS, army or security to disarm alarm and CCTV systems?</p>
 <br>
-<hr class="custom-hr">
-<br>
+<div class="custom-image-container">
+    <div class="custom-image-wrapper">
+        <img src="/images/dutch-sheperd.png" alt="Image 1" class="custom-image">
+    </div>
+    <div class="custom-image-wrapper">
+        <img src="/images/dutch-sheperd-zara.png" alt="Image 2" class="custom-image">
+    </div>
+    <div class="custom-image-wrapper">
+        <img src="/images/dutch-sheperd-axle.png" alt="Image 3" class="custom-image">
+    </div>
+</div>
+
 </div>
 
 
@@ -338,44 +351,6 @@
     <br>
     <br>
     <br>
-
-    <h2 class="text-center"  style=" color: #ffc107;">Blog</h2>
-    <br>
-    <div class="col-md-6" style="margin: 0 auto; width: 70%;">
-        <div class="row g-0 rounded overflow-hidden flex-md-row mb-4 h-md-250 position-relative" style="border: 1px solid #4a4a4ef2; background-color: rgb(38, 36, 36); box-shadow: 2px 2px 2px rgb(60, 59, 59);">
-            <div class="col p-4 d-flex flex-column position-static">
-                <strong class="d-inline-block mb-2" style="text-decoration: underline; text-underline-offset: 2px;">The changing face of Retail Theft in Johannesburg</strong>
-                <h6 class="mb-0">Beating the tag system.</h6>
-                <br>
-                <p class="card-text mb-auto">
-                    Retail crime, theft and shoplifting is reportedly on the rise in Johannesburg, with criminals becoming far more savvy about beating the tag security system. They cut the tags out in-store so that the garments can be carried past the tag sensor system at the door without detection.
-                    
-                    <!-- Hidden extra content -->
-                    <span id="extraText" style="display: none;">
-                        Restaurants being targeted Another syndicate is also focusing on restaurants; 3 or 4 women are stealing handbags and wallets from restaurant tables and chairs. Apparently they are also threatening car guards and breaking into cars by popping the back windscreens and stealing valuables. As always, don’t leave valuables in sight, put them in the boot. It is also wise to put your stuff into the boot, before you leave your home or office, rather than doing it after you have parked where you can be watched.
-                    </span>
-                </p>
-                <br>
-                <!-- Toggle link -->
-                <a href="#" id="toggleText" class="icon-link gap-1 icon-link-hover text-white">
-                    Continue reading
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
-                    </svg>
-                </a>
-                <br>
-                <p>Author: trtsecurityadmin
-                    <br>
-                    October 21, 2016
-                </p>
-            </div>
-            <div class="col-auto d-none d-lg-block">
-                <img src="https://www.blackpoolgazette.co.uk/jpim-static/image/2024/09/20/17/31/Shoplifter.jpeg?crop=3:2,smart&trim=&width=640&quality=65" alt="Thumbnail" width="200" height="250" style="object-fit: cover; border-radius: 5px;">
-            </div>
-        </div>
-    </div>
-    <br>
-    <br>
     <h2 id="contact-us" class="text-center"  style=" color: #ffc107;">Contact Us</h2>
 <br>
 <br>
@@ -465,24 +440,6 @@ function closePopup(id) {
     window.addEventListener('click', function(event) {
         if (event.target === compliancePopup) {
             compliancePopup.style.display = 'none';
-        }
-    });
-
-
-
-    document.getElementById('toggleText').addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent the default link action
-        
-        const extraText = document.getElementById('extraText');
-        const toggleLink = document.getElementById('toggleText');
-        
-        // Toggle visibility of extra text
-        if (extraText.style.display === 'none') {
-            extraText.style.display = 'inline';
-            toggleLink.innerHTML = 'See less <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-arrow-left-circle" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M16 8a8 8 0 1 1-16 0A8 8 0 0 1 16 8zM8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM11.5 8.5a.5.5 0 0 1 0-1H5.707l2.146-2.146a.5.5 0 0 1-.708-.708l-3 3a.5.5 0 0 1 0 .708l3 3a.5.5 0 1 1-.708-.708L5.707 8.5h5.793z"/></svg>';
-        } else {
-            extraText.style.display = 'none';
-            toggleLink.innerHTML = 'Continue reading <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-arrow-right-circle" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/></svg>';
         }
     });
 
