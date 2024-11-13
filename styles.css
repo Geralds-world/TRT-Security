@@ -6,6 +6,7 @@ body, html {
 
 header {
     border-bottom: 3px solid #0b0949cf;
+    background-color: white;
 }
 
 .header-logo img {
